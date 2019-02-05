@@ -32,8 +32,11 @@ app.use('/about', Routes.about);
 
 app.use('/projects?', Routes.project);
 
-//app.use(errorHandler);
-
 app.use(Routes.fallback);
+
+app.use((err, req, res, next) => {
+    res.status(500)
+    res.render('error', { error: err })
+});
 
 app.listen(8000, () => console.log("App listening on port 8000"));

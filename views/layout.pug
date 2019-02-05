@@ -9,31 +9,23 @@ html(class="no-js" lang="en" dir="ltr")
     link(rel='stylesheet', href='/css/foundation.css')
     link(rel='stylesheet', href='/css/style.css')
   body
-    #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
-      .grid-y.grid-padding-x(style='height: 100%;')
+    div#my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
+      div.grid-y.grid-padding-x(style='height: 100%;')
         block sidebar
           br
-          .cell.shrink
+          div.cell.shrink
             img.thumbnail(src='https://placehold.it/550x350')
-          .cell.auto
-
-            //- Add your name here.
+          div.cell.auto
             h5 #{name}
-
-            //- Add text here to describe who you are, what you do, and why you are so aweome.
             p.text-light
-              | #{description}
+              | #{summary||description}
+            a(href='/about') Learn More →
 
-            //- Add about page route to the href below. 
-            a(href='') Learn More →
-
-    .off-canvas-content(data-off-canvas-content='')
-      .title-bar.hide-for-large
-        .title-bar-left
+    div.off-canvas-content(data-off-canvas-content='')
+      div.title-bar.hide-for-large
+        div.title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
-
-          //- Add your name here.  This is for the mobile screen sized version.
-          span.title-bar-title Name
+          span.title-bar-title #{name}
       block content
         
 

@@ -17,7 +17,13 @@ if (fs.existsSync(FILE_PATH)) {
     existing = require(FILE_PATH);
 } else {
     // Configure initial values
-    existing.name = pkg.author || '';
+    // Decided not to use ES6 Destructuring
+    let conf = pkg.data || {};
+    existing.name = pkg.author || conf.name;
+    existing.phone = conf.phone || '';
+    existing.email = conf.email || '';
+    existing.summary = conf.summary || '';
+    existing.social = conf.social || {};
 }
 
 loadProjects('MitchPierias');
@@ -53,15 +59,15 @@ function loadProjects(username) {
 function formatRepo(repo, idx) {
     return {
         id: repo['id']||idx||0, // Repo ID or idx or zero
-        project_name: repo['name'],
+        project_name: (repo['name']||'').replace(/[\-\_]/gi,' '),
         description: repo['description'],
         technologies: [repo['language']],
         live_link: repo['homepage'],
         github_link: repo['url'],
         image_urls:{
-            "thumb":"",
-            "medium":"",
-            "original":""
+            "thumb":"https://placehold.it/550x550",
+            "medium":"https://placehold.it/550x550",
+            "original":"https://placehold.it/550x550"
         },
         stars: repo['stargazers_count']
     }

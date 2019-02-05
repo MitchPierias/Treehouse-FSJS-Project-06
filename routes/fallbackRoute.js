@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.render('error');
-});
-
-module.exports = router;
+module.exports = (err, req, res, next) => {
+    if (res.headersSent) {
+        return next(err)
+    }
+    res.status(400)
+    res.render('error', { error: err });
+};

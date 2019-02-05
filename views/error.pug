@@ -1,7 +1,7 @@
 extends layout.pug
 
 block content
-    h1 Error
-    p error.message
-    p error.status
-    p error.stack
+    article(style="padding:4vmin;")
+        h1 #{error.status} Error!
+        p Message: #{error.message||'No message'}
+        p #{error.stack||'No Stack'}
