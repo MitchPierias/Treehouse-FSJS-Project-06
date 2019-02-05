@@ -1,0 +1,197 @@
+{
+  "name": "Mitch Pierias",
+  "projects": [
+    {
+      "id": 149714845,
+      "project_name": "Agora",
+      "description": "Media File Conversion Made Simple",
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": "https://agora.pierias.com",
+      "github_link": "https://api.github.com/repos/MitchPierias/Agora",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 1
+    },
+    {
+      "id": 162081739,
+      "project_name": "Reactron",
+      "description": "Simple Electron with React Project Generator",
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": null,
+      "github_link": "https://api.github.com/repos/MitchPierias/Reactron",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 0
+    },
+    {
+      "id": 168951357,
+      "project_name": "Agora-Static",
+      "description": "Static Application Binary Delivery Site",
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": null,
+      "github_link": "https://api.github.com/repos/MitchPierias/Agora-Static",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 0
+    },
+    {
+      "id": 138157667,
+      "project_name": "Advanced-EOS-Examples",
+      "description": "A series of EOS contract development examples",
+      "technologies": [
+        "C++"
+      ],
+      "live_link": "",
+      "github_link": "https://api.github.com/repos/MitchPierias/Advanced-EOS-Examples",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 61
+    },
+    {
+      "id": 168333771,
+      "project_name": "Treehouse-FSJS-Project-05",
+      "description": null,
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": null,
+      "github_link": "https://api.github.com/repos/MitchPierias/Treehouse-FSJS-Project-05",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 0
+    },
+    {
+      "id": 140512982,
+      "project_name": "Nautilus",
+      "description": "Simple EOS Management Application",
+      "technologies": [
+        "WebAssembly"
+      ],
+      "live_link": "",
+      "github_link": "https://api.github.com/repos/MitchPierias/Nautilus",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 1
+    },
+    {
+      "id": 161648146,
+      "project_name": "React-Electron-Boilerplate",
+      "description": "Example Electron with React Project Boilerplate",
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": "",
+      "github_link": "https://api.github.com/repos/MitchPierias/React-Electron-Boilerplate",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 13
+    },
+    {
+      "id": 165796728,
+      "project_name": "Ethereum-Foundation-Example",
+      "description": "Example Ethereum Foundation Contract",
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": null,
+      "github_link": "https://api.github.com/repos/MitchPierias/Ethereum-Foundation-Example",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 0
+    },
+    {
+      "id": 164668456,
+      "project_name": "Treehouse-FSJS-Project-04",
+      "description": null,
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": null,
+      "github_link": "https://api.github.com/repos/MitchPierias/Treehouse-FSJS-Project-04",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 0
+    },
+    {
+      "id": 164668662,
+      "project_name": "Treehouse-FSJS-Project-03",
+      "description": null,
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": null,
+      "github_link": "https://api.github.com/repos/MitchPierias/Treehouse-FSJS-Project-03",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 0
+    },
+    {
+      "id": 163978475,
+      "project_name": "Treehouse-FSJS-Project-02",
+      "description": null,
+      "technologies": [
+        "HTML"
+      ],
+      "live_link": null,
+      "github_link": "https://api.github.com/repos/MitchPierias/Treehouse-FSJS-Project-02",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 0
+    },
+    {
+      "id": 163173035,
+      "project_name": "Treehouse-FSJS-Project-01",
+      "description": "Treehouse Fullstack Javascript Project 01",
+      "technologies": [
+        "JavaScript"
+      ],
+      "live_link": null,
+      "github_link": "https://api.github.com/repos/MitchPierias/Treehouse-FSJS-Project-01",
+      "image_urls": {
+        "thumb": "",
+        "medium": "",
+        "original": ""
+      },
+      "stars": 0
+    }
+  ]
+}

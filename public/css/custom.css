@@ -1,0 +1,29 @@
+.portfolio-index.grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.portfolio-index.grid-container .cell {
+  flex: none;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+.portfolio-index.grid-container .cell img.thumbnail {
+  flex:none;
+  width: 20vw;
+  height: 20vw;
+}
+
+.portfolio-index.grid-container h5 {
+  border: 1px solid blue;
+  align-self: flex-start;
+}

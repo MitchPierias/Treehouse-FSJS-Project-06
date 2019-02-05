@@ -1,0 +1,21 @@
+{
+  "name": "treehouse-fsjs-project-06",
+  "author": "Mitch Pierias",
+  "version": "0.1.0",
+  "description": "Static Node.js and Express Site",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "@octokit/rest": "^16.15.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "npm run load && node app.js",
+    "load": "node scraper.js",
+    "test": "mocha"
+  },
+  "license": "ISC"
+}

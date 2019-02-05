@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content 
+  article.grid-container.portfolio-intro
+    div
+      h1 #{title}
+      p.lead.text-light
+        | #{description}
+  article.portfolio-index.grid-container
+    each article, idx in projects
+      div.cell
+        //-a(href='#')
+        img.thumbnail(src=article.image_urls.thumbnail, width="500px")
+        h5 #{article.project_name}
