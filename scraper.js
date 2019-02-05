@@ -3,10 +3,18 @@ const Github = require('@octokit/rest')();
 const fs = require('fs');
 const path = require('path');
 const pkg = require('./package.json');
+const md5 = require('md5');
 // Defaults
 const RESULT_COUNT = 12;
 const FILE_NAME = 'data.json';
 const FILE_PATH = path.join(__dirname, FILE_NAME);
+const SAMPLE_IMAGES = [
+    'https://www.adorama.com/alc/wp-content/uploads/2018/11/shutterstock_100419445-825x465.jpg',
+    'https://www.shutterbug.com/images/styles/600_wide/public/promompi3718.png',
+    'https://www.coe.int/documents/9253022/14570967/tropea.jpg/65fdad14-c290-3333-61a2-beb95da8a095',
+    'https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    'https://www.proify.com/wp-content/uploads/2016/12/landscape-photography-competition.jpg'
+]
 
 let existing = {};
 
@@ -24,6 +32,7 @@ if (fs.existsSync(FILE_PATH)) {
     existing.email = conf.email || '';
     existing.summary = conf.summary || '';
     existing.social = conf.social || {};
+    existing.pp_url = `https://www.gravatar.com/avatar/${md5(existing.email.toLowerCase())}`
 }
 
 loadProjects('MitchPierias');
@@ -57,6 +66,7 @@ function loadProjects(username) {
  * @returns {Object} Formatted project object
  */
 function formatRepo(repo, idx) {
+    const image = SAMPLE_IMAGES[Math.floor(Math.random()*SAMPLE_IMAGES.length)];
     return {
         id: repo['id']||idx||0, // Repo ID or idx or zero
         project_name: (repo['name']||'').replace(/[\-\_]/gi,' '),
@@ -65,9 +75,9 @@ function formatRepo(repo, idx) {
         live_link: repo['homepage'],
         github_link: repo['url'],
         image_urls:{
-            "thumb":"https://placehold.it/550x550",
-            "medium":"https://placehold.it/550x550",
-            "original":"https://placehold.it/550x550"
+            "thumb":image,
+            "medium":image,
+            "original":image
         },
         stars: repo['stargazers_count']
     }

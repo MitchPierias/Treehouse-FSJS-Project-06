@@ -17,8 +17,6 @@ block content
           each skill in projects.map(proj => proj.technologies.join(', ')).filter((v,i,arr) => arr.indexOf(v)===i)
             li #{skill}
         h6 Contact Info
-
-        //- Add your own contact info
         ul
           li #{phone}
           li #{email}

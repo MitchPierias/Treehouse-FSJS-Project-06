@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@octokit/rest": "^16.15.0",
+    "md5": "^2.2.1",
     "path": "^0.12.7"
   },
   "scripts": {
@@ -19,14 +20,14 @@
   },
   "license": "ISC",
   "data": {
-    "phone":"555-555-1234",
-    "email":"example@email.com",
-    "summary":"I'm 27, like most people my age...",
+    "phone": "555-555-1234",
+    "email": "mitch@pierias.com",
+    "summary": "I'm 27, like most people my age...",
     "social": {
-      "LinkedIn":"https://www.linkedin.com/in/mitch-pierias/",
-      "GitHub":"https://github.com/MitchPierias",
-      "Medium":"https://medium.com/@mitchpierias",
-      "Twitter":"https://twitter.com/MitchPierias"
+      "LinkedIn": "https://www.linkedin.com/in/mitch-pierias/",
+      "GitHub": "https://github.com/MitchPierias",
+      "Medium": "https://medium.com/@mitchpierias",
+      "Twitter": "https://twitter.com/MitchPierias"
     }
   }
 }
