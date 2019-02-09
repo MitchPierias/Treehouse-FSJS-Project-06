@@ -2,6 +2,11 @@ extends layout.pug
 
 block content
     article(style="padding:4vmin;")
-        h1 #{error.status} Error!
-        p Message: #{error.message||'No message'}
-        p #{error.stack||'No Stack'}
+        h2.error-title #{error.status} Error!
+        if (error.message)
+            div.error-message
+                p #{error.message}
+        if (error.stack)
+            div.error-stack
+                each row in error.stack.split(/\s(?=at\s)/gi)
+                    div.line #{row}

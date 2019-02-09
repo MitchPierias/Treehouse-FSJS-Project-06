@@ -14,7 +14,7 @@ router.get('/:id', (req, res, next) => {
     if (currentProject) {
         res.render('project', currentProject);
     } else {
-        next({message:`Project '${id}' doesn't exist`});
+        next({status:404,message:`Project '${id}' doesn't exist`});
     }
 });
 

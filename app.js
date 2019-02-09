@@ -35,7 +35,7 @@ app.use('/projects?', Routes.project);
 app.use(Routes.fallback);
 
 app.use((err, req, res, next) => {
-    res.status(500)
+    res.status(err.status||500)
     res.render('error', { error: err })
 });
 
